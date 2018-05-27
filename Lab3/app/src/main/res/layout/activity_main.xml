@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asdf.lab3.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Enter password:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnRead"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/btnRead"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/changeMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtInput"
+        android:layout_alignStart="@+id/txtInput"
+        android:layout_below="@+id/txtInput"
+        android:text="Show pass" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/changeMode"
+        android:layout_alignStart="@+id/changeMode"
+        android:layout_below="@+id/changeMode"
+        android:layout_marginTop="21dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSave"
+        android:layout_alignBottom="@+id/btnSave"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="Open" />
+
+</RelativeLayout>
